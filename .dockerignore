@@ -7,3 +7,10 @@ target/
 *.swp
 .DS_Store
 .env
+.git
+.gitignore
+mvnw
+mvnw.cmd
+README.md
+/readme_images/
+/http/
