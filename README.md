@@ -1,6 +1,8 @@
-<h1 align="center">
-  To Do List - Spring Boot API
-</h1>
+<p align="center">
+  <a href="https://github.com/0nF1REy/file-storage-api" target="_blank">
+    <img src="./readme_images/to-do-list-springboot-logo.png" width="200" alt="File Storage API Logo" />
+  </a>
+</p>
 
 <div align="center">
 
@@ -35,6 +37,10 @@
 - **[👤 Desenvolvedor](#desenvolvedor)**
 - **[📫 Contribuir](#contribuicao)**
 - **[📜 Licença](#licenca)**
+
+<h1 align="center">
+  To Do List - Spring Boot API
+</h1>
 
 ## 📖 Descrição <a name="descricao"></a>
 
