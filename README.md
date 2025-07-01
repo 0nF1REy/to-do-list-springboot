@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/0nF1REy/file-storage-api" target="_blank">
+  <a href="https://github.com/0nF1REy/to-do-list-springboot" target="_blank">
     <img src="./readme_images/to-do-list-springboot-logo.png" width="200" alt="File Storage API Logo" />
   </a>
 </p>
