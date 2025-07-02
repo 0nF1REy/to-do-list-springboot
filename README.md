@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/0nF1REy/to-do-list-springboot" target="_blank">
-    <img src="./readme_images/to-do-list-springboot-logo.png" width="200" alt="File Storage API Logo" />
+    <img src="./readme_images/to-do-list-springboot-logo.png" width="200" alt="To Do List Spring Boot Logo" />
   </a>
 </p>
 
