@@ -12,11 +12,11 @@
 
 <br />
 
-  ![Java 21 ou superior](https://img.shields.io/badge/Java-21%2B-blue.svg?style=for-the-badge&logo=openjdk)
-  ![Spring Boot 3.5.3](https://img.shields.io/badge/Spring%20Boot-3.5.3-6db33f.svg?style=for-the-badge&logo=spring)
-  ![Build com Maven](https://img.shields.io/badge/build-Maven-red.svg?style=for-the-badge&logo=apachemaven)
-  ![Docker](https://img.shields.io/badge/Docker-blue?style=for-the-badge&logo=docker)
-  ![Plataforma: API REST](https://img.shields.io/badge/platform-API--REST-lightgrey.svg?style=for-the-badge)
+![Java 21 ou superior](https://img.shields.io/badge/Java-21%2B-blue.svg?style=for-the-badge&logo=openjdk)
+![Spring Boot 3.5.3](https://img.shields.io/badge/Spring%20Boot-3.5.3-6db33f.svg?style=for-the-badge&logo=spring)
+![Build com Maven](https://img.shields.io/badge/build-Maven-red.svg?style=for-the-badge&logo=apachemaven)
+![Docker](https://img.shields.io/badge/Docker-blue?style=for-the-badge&logo=docker)
+![Plataforma: API REST](https://img.shields.io/badge/platform-API--REST-lightgrey.svg?style=for-the-badge)
 
 </div>
 
@@ -75,19 +75,19 @@ O projeto é totalmente containerizado com **Docker** e **Docker Compose**, faci
 
 ## 💻 Tecnologias Utilizadas <a name="tecnologias"></a>
 
-| Tecnologia              | Descrição                                         |
-|-------------------------|---------------------------------------------------|
-| Java 21                 | *Linguagem de programação principal*              |
-| Spring Boot 3.x         | *Framework para criação da aplicação*             |
-| Spring Web              | *Módulo para construção de APIs REST*             |
-| Spring Data JPA         | *Persistência de dados simplificada*              |
-| MariaDB                 | *Banco de dados relacional utilizado*             |
-| Maven                   | *Gerenciador de dependências e build do projeto*  |
-| Docker & Docker Compose | *Containerização da aplicação e do banco de dados*|
-| SpringDoc OpenAPI 2.x | *Documentação automática da API*                    |
-| H2 Database	          | Banco de dados em memória para a execução de testes.|
+| Tecnologia              | Descrição                                             |
+| ----------------------- | ----------------------------------------------------- |
+| Java 21                 | _Linguagem de programação principal_                  |
+| Spring Boot 3.x         | _Framework para criação da aplicação_                 |
+| Spring Web              | _Módulo para construção de APIs REST_                 |
+| Spring Data JPA         | _Persistência de dados simplificada_                  |
+| MariaDB                 | _Banco de dados relacional utilizado_                 |
+| Maven                   | _Gerenciador de dependências e build do projeto_      |
+| Docker & Docker Compose | _Containerização da aplicação e do banco de dados_    |
+| SpringDoc OpenAPI 2.x   | _Documentação automática da API_                      |
+| H2 Database             | _Banco de dados em memória para a execução de testes_ |
 
-## 🚀 Começando 
+## 🚀 Começando
 
 Para executar este projeto, você precisará ter os seguintes softwares instalados em sua máquina:
 
@@ -112,10 +112,10 @@ Para executar este projeto, você precisará ter os seguintes softwares instalad
 
 <br />
 
-*   **Git:** Para controle de versão e clonar o repositório. [https://git-scm.com/](https://git-scm.com/)
-*   **Maven:** Para construir e gerenciar dependências do projeto. [https://maven.apache.org/](https://maven.apache.org/)
-*   **Java JDK:** Ambiente para executar a aplicação, versão 21 ou superior. [https://www.oracle.com/java/](https://www.oracle.com/java/)
-*   **Docker:** Para containerizar a aplicação e o banco de dados. [https://www.docker.com/](https://www.docker.com/)
+- **Git:** Para controle de versão e clonar o repositório. [https://git-scm.com/](https://git-scm.com/)
+- **Maven:** Para construir e gerenciar dependências do projeto. [https://maven.apache.org/](https://maven.apache.org/)
+- **Java JDK:** Ambiente para executar a aplicação, versão 21 ou superior. [https://www.oracle.com/java/](https://www.oracle.com/java/)
+- **Docker:** Para containerizar a aplicação e o banco de dados. [https://www.docker.com/](https://www.docker.com/)
 
 ---
 
@@ -136,19 +136,19 @@ Este é o método mais simples, pois o Docker Compose cuidará de configurar a a
 
 2.  **Crie o arquivo de ambiente:**
 
-- Na raiz do projeto, renomeie o arquivo ```.env.example``` para ```.env```. Você pode alterar as credenciais se desejar.
+- Na raiz do projeto, renomeie o arquivo `.env.example` para `.env`. Você pode alterar as credenciais se desejar.
 
-    ```bash
-    cp .env.example .env
-    ```
+  ```bash
+  cp .env.example .env
+  ```
 
 3.  **Suba os contêineres:**
 
 - Este comando irá construir a imagem da aplicação e iniciar os serviços da aplicação e do banco de dados.
 
-    ```bash
-    docker compose up --build
-    ```
+  ```bash
+  docker compose up --build
+  ```
 
 ## Modo 2: Localmente com Maven
 
@@ -161,18 +161,18 @@ Este é o método mais simples, pois o Docker Compose cuidará de configurar a a
 
 2.  **Configure o Banco de Dados:**
 
-- Certifique-se de ter uma instância do MariaDB (ou MySQL) rodando localmente. Em seguida, atualize o arquivo ```src/main/resources/application.properties``` com as suas credenciais. O arquivo deve ficar parecido com o exemplo abaixo:
+- Certifique-se de ter uma instância do MariaDB (ou MySQL) rodando localmente. Em seguida, atualize o arquivo `src/main/resources/application.properties` com as suas credenciais. O arquivo deve ficar parecido com o exemplo abaixo:
 
-    ```bash
-    # --- Configuração do Banco de Dados Local (MariaDB/MySQL) ---
-    spring.datasource.url=jdbc:mariadb://localhost:3306/to_do_list?createDatabaseIfNotExist=true
+  ```bash
+  # --- Configuração do Banco de Dados Local (MariaDB/MySQL) ---
+  spring.datasource.url=jdbc:mariadb://localhost:3306/to_do_list?createDatabaseIfNotExist=true
 
-    # Substitua pelo seu usuário do banco de dados (ex: root).
-    spring.datasource.username=seu_usuario_aqui
+  # Substitua pelo seu usuário do banco de dados (ex: root).
+  spring.datasource.username=seu_usuario_aqui
 
-    # Substitua pela sua senha do banco de dados.
-    spring.datasource.password=sua_senha_aqui
-    ```
+  # Substitua pela sua senha do banco de dados.
+  spring.datasource.password=sua_senha_aqui
+  ```
 
 3.  **Execute a Aplicação (Escolha uma das opções abaixo):**
 
@@ -180,29 +180,29 @@ Este é o método mais simples, pois o Docker Compose cuidará de configurar a a
 
   Este comando inicia a aplicação diretamente. É o mais recomendado para desenvolver e testar rapidamente.
 
-    ```bash
-    ./mvnw spring-boot:run
-    ```
+  ```bash
+  ./mvnw spring-boot:run
+  ```
 
   **OU**
 
 - **Opção B:** Execução como Pacote (Simulando Produção)
 
-  Este método primeiro compila e empacota sua aplicação em um arquivo ```.jar``` e depois o executa.
+  Este método primeiro compila e empacota sua aplicação em um arquivo `.jar` e depois o executa.
 
-    ```bash
-    # 1. Crie o pacote .jar
-    ./mvnw clean package
+  ```bash
+  # 1. Crie o pacote .jar
+  ./mvnw clean package
 
-    # 2. Execute o arquivo .jar gerado
-    java -jar target/to-do-list-springboot-0.0.1-SNAPSHOT.jar
-    ```
+  # 2. Execute o arquivo .jar gerado
+  java -jar target/to-do-list-springboot-0.0.1-SNAPSHOT.jar
+  ```
 
 ## ✅ Acesso à Aplicação <a name="acesso"></a>
 
--  A **API** estará disponível em: **```http://localhost:8080```**
+- A **API** estará disponível em: **`http://localhost:8080`**
 
--  O **Swagger** poderá ser visualizado em **```http://localhost:8080/swagger-ui.html```**
+- O **Swagger** poderá ser visualizado em **`http://localhost:8080/swagger-ui.html`**
 
 ---
 
@@ -288,14 +288,14 @@ Os exemplos abaixo utilizam a ferramenta **HTTPie** para facilitar testes em lin
 
 ## 📚 Tabela de Endpoints <a name="tabela"></a>
 
-| Ação                  | Método | Endpoint        | Descrição                             | Exemplo com `curl` |
-|-----------------------|--------|------------------|-----------------------------------------|---------------------|
-| 📄 Criar Tarefa        | POST   | `/todos`         | Cria uma nova tarefa                    | `curl -X POST http://localhost:8080/todos -H "Content-Type: application/json" -d '{"nome":"Estudar Docker","descricao":"Curso sobre Docker Compose","prioridade":1}'` |
-| 📋 Listar Todas        | GET    | `/todos`         | Retorna a lista de todas as tarefas     | `curl http://localhost:8080/todos` |
-| 📝 Atualizar Tarefa    | PUT    | `/todos`         | Atualiza uma tarefa existente           | `curl -X PUT http://localhost:8080/todos -H "Content-Type: application/json" -d '{"id":1,"nome":"Estudar Docker","descricao":"Curso completo","prioridade":2,"realizado":true}'` |
-| 🗑️ Remover por ID      | DELETE | `/todos/{id}`    | Exclui uma tarefa pelo ID               | `curl -X DELETE http://localhost:8080/todos/1` |
+| Ação                | Método | Endpoint      | Descrição                           | Exemplo com `curl`                                                                                                                                                               |
+| ------------------- | ------ | ------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 📄 Criar Tarefa     | POST   | `/todos`      | Cria uma nova tarefa                | `curl -X POST http://localhost:8080/todos -H "Content-Type: application/json" -d '{"nome":"Estudar Docker","descricao":"Curso sobre Docker Compose","prioridade":1}'`            |
+| 📋 Listar Todas     | GET    | `/todos`      | Retorna a lista de todas as tarefas | `curl http://localhost:8080/todos`                                                                                                                                               |
+| 📝 Atualizar Tarefa | PUT    | `/todos`      | Atualiza uma tarefa existente       | `curl -X PUT http://localhost:8080/todos -H "Content-Type: application/json" -d '{"id":1,"nome":"Estudar Docker","descricao":"Curso completo","prioridade":2,"realizado":true}'` |
+| 🗑️ Remover por ID   | DELETE | `/todos/{id}` | Exclui uma tarefa pelo ID           | `curl -X DELETE http://localhost:8080/todos/1`                                                                                                                                   |
 
-*O endpoint de **remoção** retorna a lista atualizada de tarefas como confirmação.*
+_O endpoint de **remoção** retorna a lista atualizada de tarefas como confirmação._
 
 ---
 
@@ -303,34 +303,34 @@ Os exemplos abaixo utilizam a ferramenta **HTTPie** para facilitar testes em lin
 
 O projeto segue a estrutura padrão do Maven e adota uma arquitetura em camadas para organizar as responsabilidades:
 
-  ```
-  .
-  ├── .mvn
-  ├── database
-  │   └── queries.sql        # Scripts SQL de exemplo
-  ├── http
-  │   └── requests.sh        # Exemplos de requisições com HTTPie
-  ├── readme_images
-  ├── src
-  │   ├── main
-  │   │   ├── java/br/com/alanryan/to_do_list_springboot
-  │   │   │   ├── controller # (Camada de Apresentação) Recebe requisições HTTP
-  │   │   │   ├── entity     # (Camada de Domínio) Representa as tabelas do banco
-  │   │   │   ├── repository # (Camada de Persistência) Interface com o banco de dados
-  │   │   │   ├── service    # (Camada de Serviço) Contém a lógica de negócio
-  │   │   │   └── ToDoListSpringbootApplication.java
-  │   │   └── resources
-  │   │       ├── application.properties # Configurações da aplicação
-  │   │       └── ...
-  │   └── test
-  │       └── java/br/com/alanryan/to_do_list_springboot
-  │           └── ToDoListSpringbootApplicationTests.java # Testes de integração
-  ├── .env.example           # Exemplo de variáveis de ambiente
-  ├── compose.yml            # Arquivo do Docker Compose
-  ├── Dockerfile             # Define a imagem Docker da aplicação
-  ├── pom.xml                # Arquivo de configuração do Maven
-  └── ...
-  ```
+```
+.
+├── .mvn
+├── database
+│   └── queries.sql        # Scripts SQL de exemplo
+├── http
+│   └── requests.sh        # Exemplos de requisições com HTTPie
+├── readme_images
+├── src
+│   ├── main
+│   │   ├── java/br/com/alanryan/to_do_list_springboot
+│   │   │   ├── controller # (Camada de Apresentação) Recebe requisições HTTP
+│   │   │   ├── entity     # (Camada de Domínio) Representa as tabelas do banco
+│   │   │   ├── repository # (Camada de Persistência) Interface com o banco de dados
+│   │   │   ├── service    # (Camada de Serviço) Contém a lógica de negócio
+│   │   │   └── ToDoListSpringbootApplication.java
+│   │   └── resources
+│   │       ├── application.properties # Configurações da aplicação
+│   │       └── ...
+│   └── test
+│       └── java/br/com/alanryan/to_do_list_springboot
+│           └── ToDoListSpringbootApplicationTests.java # Testes de integração
+├── .env.example           # Exemplo de variáveis de ambiente
+├── compose.yml            # Arquivo do Docker Compose
+├── Dockerfile             # Define a imagem Docker da aplicação
+├── pom.xml                # Arquivo de configuração do Maven
+└── ...
+```
 
 ## 🧪 Testes Automatizados <a name="testes"></a>
 
@@ -340,15 +340,15 @@ O projeto inclui testes de integração que validam o comportamento dos endpoint
 
 Para executar os testes, rode o seguinte comando na raiz do projeto:
 
-  ```bash
-  ./mvnw test
-  ```
+```bash
+./mvnw test
+```
 
 ---
 
 ## 🧩 Configuração do Ambiente <a name="confambiente"></a>
 
-- **```application.properties``` para produção:**
+- **`application.properties` para produção:**
 
   ```bash
   spring.application.name=to-do-list-springboot
@@ -360,7 +360,7 @@ Para executar os testes, rode o seguinte comando na raiz do projeto:
   spring.jpa.show-sql=true
   ```
 
-- **```.env``` para Docker:**
+- **`.env` para Docker:**
 
   ```bash
   MYSQL_DATABASE=to_do_list
@@ -372,7 +372,7 @@ Para executar os testes, rode o seguinte comando na raiz do projeto:
 <div align="center">
 
 ## 👤 Sobre o Desenvolvedor <a name="desenvolvedor"></a>
-                       
+
 <table>
   <tr>
     <td align="center">
@@ -415,7 +415,7 @@ Contribuições são muito bem-vindas! Se você deseja contribuir com o projeto,
 
 1.  **Faça um Fork** do repositório.
 
-2.  **Crie uma nova Branch** para sua feature ou correção: 
+2.  **Crie uma nova Branch** para sua feature ou correção:
 
     ```bash
     git checkout -b feature/nome-da-feature
