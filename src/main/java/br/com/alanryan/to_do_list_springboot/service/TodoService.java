@@ -9,8 +9,8 @@ import java.util.List;
 
 @Service
 public class TodoService {
-    
-    private TodoRepository todoRepository;
+
+    private final TodoRepository todoRepository;
 
     public TodoService(TodoRepository todoRepository) {
         this.todoRepository = todoRepository;
@@ -22,8 +22,8 @@ public class TodoService {
     }
 
     public List<Todo> list() {
-        Sort sort = Sort.by("prioridade").descending().and(
-                Sort.by("nome").ascending());
+        Sort sort = Sort.by("prioridade").descending()
+                .and(Sort.by("nome").ascending());
         return todoRepository.findAll(sort);
     }
 
